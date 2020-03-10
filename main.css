@@ -8,9 +8,10 @@ body {
     color:#04080F;
 }
 
-a {
+a, a:hover, a:visited, a:link, a:active {
     color:#1D2D44;
     font-weight:bold;
+    text-decoration:none;
 }
 
 h3 {
