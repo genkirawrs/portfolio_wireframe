@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:14px;
+    color:#04080F;
+}
+
+a {
+    color:#1D2D44;
+    font-weight:bold;
+}
+
+h3 {
+    font-size:1.5em;
+}
+
+nav {
+    display:inline-block;
+    position:fixed;
+    width:100%;
+}
+
+.nav-bar, footer {
+    background-color: #1D2D44;
+    padding:5px 10px 5px 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-profile-icon {
+    height:40px;
+    border-radius:150px;
+    border:1px solid white;
+}
+
+.nav-links {
+    background-color:#F0EBD8;
+}
+
+.nav-links ul {
+    list-style:none;
+    display:flex;
+    justify-content: flex-end;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+.nav-links ul li {
+    margin:8px 10px 8px 10px;
+    font-weight:bold;
+}
+
+.nav-hamburger {
+    height:20px;
+}
+
+header {
+    background-color:#BFD7EA;
+    display:inline-block;
+    width:100%;
+    line-height:1.5em;
+    padding:15% 15% 15% 5%;
+}
+
+header button {
+    border-radius: 5px;
+    padding:8px;
+    background-color:white;
+    border:1px solid #1D2D44;
+
+}
+
+main {
+    padding-top:63px;
+}
+
+section {
+    padding:5% 5% 10% 5%;
+}
+
+.section-about {
+    background-color:#C1CAD6;
+}
+
+.section-projects {
+    padding:0px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.section-projects h3 {
+    margin-left:5%;
+    text-align:left;
+    align-self: flex-start;
+}
+
+footer {
+    color:white;
+    font-size:13px;
+    display:flex;
+    justify-content: space-between;
+    padding:8px;
+}
+
+.project {
+    padding:0px;
+    padding-bottom:10%;
+    width:90%;
+    display:inline-block;
+    font-size:14px;
+}
+
+.project img {
+    width:100%;
+}
+
+.project h4 {
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    font-size:1.2em;
+}
+
+img.project-language, img.contact-icon {
+    width:25px;
+    height:25px;
+}
+
+a.project-link {
+    border:1px solid #1D2D44;
+    border-radius:5px;
+    text-decoration:none;
+    padding:8px;
+}
+
+footer a , footer a:visited, footer a:link, footer a:active {
+    color:white;
+    text-decoration:none;
+    font-weight:normal;
+}
+
+footer a:hover {
+    text-decoration:underline;
+}
