@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hi, my name is Rosalind and this is my portfolio">
     <title>Portfolio Wireframe</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
@@ -24,20 +25,25 @@
         </div>
     </nav>
     <main>
-        <header role="banner">
-            <h1>Hello</h1>
-            <h2>Headline</h2>
+        <header role="banner" class="header">
+            <div class="header-banner"></div>
+            <div class="header-text">
+            <h1>Hi, my name is Rosalind.</h1>
+            <h2>I'm a full-stack developer with a passion for learning and collaboration.</h2>
             <button>View Projects</button>
+            </div>
         </header>
         <section class="section-about">
             <h3>About</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                I am a web developer with over 10 years of experience ranging in HTML/CSS, jQuery, Ajax, PHP, and MySQL. I love programming because there is always an opportunity to learn, create, and improve. I deeply enjoy the eureka moments that come from solving a bug, puzzling through a challenging project spec, or nerding out over new technologies with my teammates.            
             </p>
             <p>
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                When I'm not immersed in code, I can be found baking and trying out new recipes, drawing, or brainstorming passion projects in one of my many notebooks.
             </p>
-            <p>Please feel free to reach out via the following:</p>
+            <p>
+                I am always open and curious to discuss anything programming so please feel free to reach out via the following links:
+            </p>
             <div class="contact-icons">
             <img src="imgs/icon_github.png" alt="GitHub" title="GitHub" class="contact-icon">
             <img src="imgs/icon_linkedin.png" alt="LinkedIn" title="LinkedIn" class="contact-icon">
@@ -49,7 +55,7 @@
 
             <section id="project-1" class="project">
                 <img src="imgs/project_catQuiz.png" alt="tbd" title="tbd" class="project-image">
-                <h4>Project Title</h4>
+                <h4>Cat IQ Quiz</h4>
                 <div class="language-icons">
                     <svg viewBox="0 0 128 128" class="project-lang" data-name="HTML5">
                         <path fill="#333333" d="M9.032 2l10.005 112.093 44.896 12.401 45.02-12.387 10.015-112.107h-109.936zm89.126 26.539l-.627 7.172-.276 3.289h-52.665000000000006l1.257 14h50.156000000000006l-.336 3.471-3.233 36.119-.238 2.27-28.196 7.749v.002l-.034.018-28.177-7.423-1.913-21.206h13.815000000000001l.979 10.919 15.287 4.081h.043v-.546l15.355-3.875 1.604-17.579h-47.698l-3.383-38.117-.329-3.883h68.939l-.33 3.539z"></path>
@@ -62,7 +68,7 @@
                     </svg>
                 </div>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                A responsive quiz application that tests the quiz taker's feline know-how. The app guides you through the quiz, letting you know your progress, score, and whether your answer was correct or not.
                 </p>
                 <br>
                 <a href="#" class="project-link">GitHub Repo</a>&nbsp;&nbsp;<a href="#" class="project-link">Live Demo</a>
@@ -72,9 +78,9 @@
     <footer role="content-info">
         <div class="copyright">&copy;2020 Rosalind Hung</div>
         <div class="contact-footer">
-            <img src="imgs/project_catQuiz.png" alt="GitHub" title="GitHub" class="contact-icon">&nbsp;
-            <img src="imgs/project_catQuiz.png" alt="LinkedIn" title="LinkedIn" class="contact-icon">&nbsp;
-            <img src="imgs/project_catQuiz.png" alt="Email" title="email" class="contact-icon">
+            <a href="#"><img src="imgs/icon_github.png" alt="GitHub" title="GitHub" class="contact-icon footer"></a>
+            <a href="#"><img src="imgs/icon_linkedin.png" alt="LinkedIn" title="LinkedIn" class="contact-icon footer"></a>
+            <a href="#"><img src="imgs/icon_email.png" alt="Email" title="email" class="contact-icon footer"></a>
         </div>
     </footer>
 </body>
