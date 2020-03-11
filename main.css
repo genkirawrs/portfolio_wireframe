@@ -40,6 +40,7 @@ nav {
 
 .nav-links {
     background-color:#F0EBD8;
+    display:none;
 }
 
 .nav-links ul {
@@ -68,6 +69,7 @@ header {
     width:100%;
     line-height:1.5em;
     padding:15% 15% 15% 5%;
+    background-size:cover;
 }
 
 header button {
@@ -79,7 +81,7 @@ header button {
 }
 
 main {
-    padding-top:63px;
+    padding-top:50px;
 }
 
 section {
@@ -129,9 +131,20 @@ footer {
     font-size:1.2em;
 }
 
-img.project-language, img.contact-icon {
+img.project-language {
     width:25px;
     height:25px;
+}
+
+.contact-icons {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+img.contact-icon {
+    width:25px;
+    margin-right: 10px;
 }
 
 a.project-link {
@@ -149,4 +162,8 @@ footer a , footer a:visited, footer a:link, footer a:active {
 
 footer a:hover {
     text-decoration:underline;
+}
+
+.project-lang {
+    height:25px;
 }
