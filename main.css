@@ -235,7 +235,7 @@ footer a:hover {
     display:none;
 }
 
-@media screen and (min-width:360px) and (max-width:800px){
+@media screen and (min-width:360px){
     header {
         background-size: 900px;
         background-repeat:no-repeat;
