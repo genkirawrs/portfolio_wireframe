@@ -48,7 +48,12 @@ $(window).scroll(function(event){
 
 $(document).ready(function(){
     $(this).scrollTop(0);
-    $('#full-nav-welcome').css("fontWeight","bold");
+    let deviceMedia = window.matchMedia("(min-width: 1000px)");
+
+    if(deviceMedia.matches){
+        $('#full-nav-welcome').css("fontWeight","bold");
+    }
+    
     $('.nav-link').on('click', function(event){
         event.preventDefault();
         let linkSection = getSectionName(this.id);
