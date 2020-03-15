@@ -5,35 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hi, my name is Rosalind and this is my portfolio">
     <title>Portfolio Wireframe</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:bold,regular,medium&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <nav>
+    <nav id="navigation">
         <div class="nav-bar">
-            <img src="imgs/profile.jpg" class="nav-profile-icon" alt="tbd" title="tbd">
-            <img src="imgs/icon_hamburger.png" class="nav-hamburger" alt="expand menu" title="expand menu">
+            <a href="javascript:scrollToSection('welcome')" title="Scroll to Top"><img src="imgs/profile.jpg" class="nav-profile-icon" alt="Profile Image" title="Profile Image"></a>
+            <div id="menu-hamburger"><button type="button" onclick="toggleMenu();"><img src="imgs/icon_hamburger.png" class="nav-hamburger" alt="expand menu" title="expand menu"></button></div>
+            <div id="menu-full">
+                <ul>
+                    <li><a id="nav-link-welcome" title="Scroll to Top" class="nav-link">Welcome</a></li>
+                    <li><a id="nav-link-about" title="Scroll to About Section" class="nav-link">About</a></li>
+                    <li><a id="nav-link-projects" title="Scroll to Projects Section" class="nav-link">Projects</a></li>
+                </ul>               
+            </div>
         </div>
         <div class="nav-links">
             <ul>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a title="Scroll to About Section" id="nav-link-about" class="nav-link">About</a></li>
+                <li><a title="Scroll to Projects Section" id="nav-link-projects" class="nav-link">Projects</a></li>
             </ul>
         </div>
     </nav>
     <main>
-        <header role="banner" class="header">
-            <div class="header-banner"></div>
+        <header id="welcome" role="banner" class="header">
             <div class="header-text">
             <h1>Hi, my name is Rosalind.</h1>
             <h2>I'm a full-stack developer with a passion for learning and collaboration.</h2>
-            <button>View Projects</button>
+            <button type="button" onclick="scrollToSection('projects')">View Projects</button>
             </div>
         </header>
-        <section class="section-about">
+        <section id="about" class="section-about">
             <h3>About</h3>
             <p>
                 I am a web developer with over 10 years of experience ranging in HTML/CSS, jQuery, Ajax, PHP, and MySQL. I love programming because there is always an opportunity to learn, create, and improve. I deeply enjoy the eureka moments that come from solving a bug, puzzling through a challenging project spec, or nerding out over new technologies with my teammates.            
@@ -42,19 +48,19 @@
                 When I'm not immersed in code, I can be found baking and trying out new recipes, drawing, or brainstorming passion projects in one of my many notebooks.
             </p>
             <p>
-                I am always open and curious to discuss anything programming so please feel free to reach out via the following links:
+                I am always open to discuss anything programming related! Please feel free drop me a line at <a href="mailto:rosalind.hung99@gmail.com"><strong>rosalind.hung99@gmail.com</strong></a> or reach out via the following:
             </p>
             <div class="contact-icons">
-            <img src="imgs/icon_github.png" alt="GitHub" title="GitHub" class="contact-icon">
-            <img src="imgs/icon_linkedin.png" alt="LinkedIn" title="LinkedIn" class="contact-icon">
-            <img src="imgs/icon_email.png" alt="Email" title="email" class="contact-icon">
+            <a href="https://github.com/genkirawrs" title="Visit GitHub profile"><img src="imgs/icon_github.png" alt="GitHub profile" title="GitHub profile" class="contact-icon"></a>
+            <a href="https://www.linkedin.com/in/rosalind-hung/" title="Visit LinkedIn profile"><img src="imgs/icon_linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" class="contact-icon"></a>
+            </div>
         </section>
-
-        <section class="section-projects">
+        <section id="projects" class="section-projects">
             <h3>Projects</h3>
 
             <section id="project-1" class="project">
-                <img src="imgs/project_catQuiz.png" alt="tbd" title="tbd" class="project-image">
+                <img src="imgs/project_catQuiz.png" alt="Project Image for Cat Quiz App" title="Cat Quiz App Project Image" class="project-image">
+                <div class="project-info">
                 <h4>Cat IQ Quiz</h4>
                 <div class="language-icons">
                     <svg viewBox="0 0 128 128" class="project-lang" data-name="HTML5">
@@ -71,17 +77,22 @@
                 A responsive quiz application that tests the quiz taker's feline know-how. The app guides you through the quiz, letting you know your progress, score, and whether your answer was correct or not.
                 </p>
                 <br>
-                <a href="#" class="project-link">GitHub Repo</a>&nbsp;&nbsp;<a href="#" class="project-link">Live Demo</a>
+                <a href="https://github.com/genkirawrs/quiz-app" class="project-link" title="Visit Cat IQ App GitHub Repository">GitHub Repo</a>
+                &nbsp;&nbsp;
+                <a href="https://genkirawrs.github.io/quiz-app/" class="project-link" title="Visit Cat IQ App Live Demo">Live Demo</a>
+                </div>
+                
             </section>
         </section>
+        <footer role="content-info">
+            <div class="copyright">&copy;2020 Rosalind Hung</div>
+            <div class="contact-footer">
+                <a href="https://github.com/genkirawrs" title="Visit GitHub profile"><img src="imgs/icon_github.png" alt="GitHub profile" title="GitHub profile" class="contact-icon footer"></a>
+                <a href="https://www.linkedin.com/in/rosalind-hung/" title="Visit LinkedIn profile"><img src="imgs/icon_linkedin.png" alt="LinkedIn profile" title="LinkedIn profile" class="contact-icon footer"></a>
+            </div>
+        </footer>
     </main>
-    <footer role="content-info">
-        <div class="copyright">&copy;2020 Rosalind Hung</div>
-        <div class="contact-footer">
-            <a href="#"><img src="imgs/icon_github.png" alt="GitHub" title="GitHub" class="contact-icon footer"></a>
-            <a href="#"><img src="imgs/icon_linkedin.png" alt="LinkedIn" title="LinkedIn" class="contact-icon footer"></a>
-            <a href="#"><img src="imgs/icon_email.png" alt="Email" title="email" class="contact-icon footer"></a>
-        </div>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
