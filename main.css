@@ -300,6 +300,7 @@ footer a:hover {
     .project img {
         width:50%;
         align-self: flex-start;
+        border:1px solid #888888;
     }
 
     .project-info {
